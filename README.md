@@ -1,10 +1,17 @@
 # jQuery and Vanilla Idle
 
 A simple jQuery plugin along with Vanilla that executes a callback function if the user is idle. Code author [Henrique Boaventura](https://github.com/kidh0).
+
 #### About Author
 [Great guy Henrique Boaventura](https://github.com/kidh0).
+
 [Author's Github Profile](https://github.com/kidh0)
+
 [Author's Github Code](https://github.com/kidh0/jquery.idle)
+
+## Demo
+
+Live example [here](https://shariefis.github.io/Idle-Timeout/).
 
 ## Usage
 
