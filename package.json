@@ -1,0 +1,21 @@
+{
+  "name": "idle",
+  "version": "1.0.0",
+  "description": "A simple jQuery plugin that executes a callback function if the user is idle.",
+  "main": "jquery.idle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "jquery": "^3"
+  },
+  "keywords": [
+    "idle",
+    "detection",
+    "callback",
+    "jquery",
+    "ecosystem:jquery"
+  ],
+  "author": "Henrique Boaventura <hboaventura@gmail.com> (http://www.hboaventura.com/)",
+  "co-author": "Imadullah Sharief <imadsharf@live.com>"
+}

@@ -1,0 +1,69 @@
+<html>
+
+<head>
+  <title>jQuery Idle</title>
+  <style>
+    #status,
+    #visibility {
+      background-color: #E6EFC2;
+      border-color: #C6D880;
+      color: #264409;
+      padding: 20px;
+      text-align: center;
+      width: 100px;
+    }
+
+    #status.idle,
+    #visibility.idle {
+      background-color: #FFF6BF;
+      border-color: #FFD324;
+      color: #514721;
+    }
+
+    .center-box {
+      display: flex;
+      justify-content: center;
+    }
+
+    .center-box div {
+      margin: 2rem;
+    }
+
+    body {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>jQuery Idle</h1>
+  <div class="center-box">
+    <div id="status">Active!</div>
+    <div id="visibility">Visible!</div>
+  </div>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.idle.js"></script>
+  <script type="text/javascript">
+    $(document).idle({
+      onIdle: function () {
+        $('#status').toggleClass('idle').html('Idle!');
+      },
+      onActive: function () {
+        $('#status').toggleClass('idle').html('Active!');
+      },
+      onHide: function () {
+        $('#visibility').toggleClass('idle').html('Hidden!');
+      },
+      onShow: function () {
+        // Add a slight pause so you can see the change
+        setTimeout(function () {
+          $('#visibility').toggleClass('idle').html('Visible!');
+        }, 250);
+      },
+      idle: 5000,
+      keepTracking: true
+    });
+  </script>
+</body>
+
+</html>
